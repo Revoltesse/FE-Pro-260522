@@ -1,17 +1,21 @@
 //Напишіть функцію map(fn, array), яка приймає на вхід функцію і масив, і обробляє кожен елемент масива, повертаючи новий масив
 
-let arr = [5, 3, 5, 10];
+let arr = [];
 
-function map(fn, array) {
+function map(array, fn) {
     let newArray = [];
-    for (let i = 0; i < arr.length; i++) {
-        newArray[i] = fn(arr[i]);
+
+    for (let i = 0; i < array.length; i++) {
+        newArray.push(fn(array[i]));
     }
-    return newArray;
+
+    return console.log(newArray);
 }
 //перевірка
-function double(x) { return x * 2; }
-console.log(map(double, arr));
+function double(x) {
+    return x * 2;
+}
+map([1, 2, 10], double);
 
 
 /*
@@ -22,12 +26,14 @@ function checkAge(age) {
     } else {
         return confirm('Батьки дозволили?');
     }
-}
- */
-function checkAge(age) {
-    return (age < 18) ? true : confirm('Батьки дозволили?');
-}
+}*/
 
 function checkAge(age) {
-    return (age < 18) || confirm('Батьки дозволили?');
+    return (age > 18) ? true : confirm('Батьки дозволили?');
 }
+checkAge(22);
+
+function checkAge(age) {
+    return (age > 18) || confirm('Батьки дозволили?');
+}
+
