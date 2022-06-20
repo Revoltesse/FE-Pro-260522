@@ -12,10 +12,15 @@ humanArray.push(new Human('Irene', 25));
 humanArray.push(new Human('Julia', 55));
 humanArray.push(new Human('Ann', 15));
 
-
-humanArray.sort((a,b) => a.age - b.age);
+//зростання
+humanArray.sort((a, b) => a.age - b.age);
 for (let item of humanArray) {
     console.log(item.age)
 }
 
+//зменшення
+humanArray.sort((a, b) => b.age - a.age);
+for (let item of humanArray) {
+    console.log(item.age)
+}
 
