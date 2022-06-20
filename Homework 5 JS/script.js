@@ -7,6 +7,7 @@ let docObj = {
     body: "",
     footer: "",
     date: "",
+
     app: {
         header: "",
         body: "",
