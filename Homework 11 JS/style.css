@@ -1,0 +1,15 @@
+.output {
+    border: 2px solid black;
+    width: 200px;
+    min-height: 50px;
+}
+
+li {
+    width: 100px;
+}
+
+.buttons {
+    border: 2px solid black;
+    width: 200px;
+    min-height: 50px;
+}
