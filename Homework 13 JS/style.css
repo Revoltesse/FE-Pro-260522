@@ -1,0 +1,27 @@
+.cards {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 30px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 40%;
+    box-shadow: 10px 5px 5px grey;
+    background: rgb(36, 0, 0);
+    background: linear-gradient(90deg, rgba(36, 0, 0, 0.3925945378151261) 0%, rgba(214, 181, 193, 0.29735644257703087) 56%);
+}
+
+.cards input {
+    margin: 10% 30%;
+    width: 40%;
+    border: 2px solid black;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    pointer-events: visible;
+}
+
+p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
